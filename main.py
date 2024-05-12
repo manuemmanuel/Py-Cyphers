@@ -1,5 +1,5 @@
-from encryption_module import encrypt_text
-from decryption_module import decrypt_text
+from encrypt import encrypt_text
+from decrypt import decrypt_text
 
 if __name__ == "__main__":
     message = "Welcome to my world!"
