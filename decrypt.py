@@ -9,11 +9,3 @@ def decrypt_text(cipher_text, key):
     encrypted_data = base64_bytes.decode('ascii')
     decrypted_data = xor_string(encrypted_data, key)
     return decrypted_data
-
-if __name__ == "__main__":
-    cipher_text = "X19fX2BgbG1lbm"
-    
-    key = "mysecretkey"
-    decrypted_message = decrypt_text(cipher_text, key)
-    print(f"Decrypted Message: {decrypted_message}")
-
