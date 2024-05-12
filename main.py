@@ -2,8 +2,8 @@ from encrypt import encrypt_text
 from decrypt import decrypt_text
 
 if __name__ == "__main__":
-    message = "Welcome to my world!"
-    key = "mysecretkey"
+    message = input("Enter the text: ")
+    key = input("Enter the key: ")
     cipher_text = encrypt_text(message, key)
     print(f"Encrypted Message: {cipher_text}")
     
